@@ -1,0 +1,11 @@
+.CardContainer{
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 7.5vh 1vw 5vh 1vw;;
+    width: 50vh;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}

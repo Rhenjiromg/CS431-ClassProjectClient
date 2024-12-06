@@ -1,0 +1,252 @@
+.dashBoardContainer{
+    display: flex;
+    justify-content: center; 
+    height: 100vh; 
+    background-color: #f0f0f0;
+    flex-direction: row;
+}
+
+button{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.post{
+    gap: 0px;
+    padding-top: 1vh;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.sideContent{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContent{
+    flex: 2;
+    overflow: auto;
+    scrollbar-width: 0px;
+    margin: 3vh;
+}
+.mainContent::-webkit-scrollbar {
+    display: none;
+}
+
+.postInteractions, .posterInfo, p{
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+.poster, .follow{
+    font-size: 17px;
+}
+
+.poster:hover, .follow:hover{
+    color: blue;
+}
+
+.icon:hover{
+    color: blue;
+}
+
+.uploadingModal{
+    display: flex;
+    flex-direction: column;
+}
+.modal-textarea{
+    width: 100%;
+}
+.modal-post-button{
+    padding: 12px 24px;
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    width: 10vw;
+    align-self: flex-end;
+    margin-top: 1vh;
+}
+.modal-post-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.Title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sideButtons{
+    padding: 12px 24px;
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 24px; 
+    font-weight:lighter; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    width: 15vw;
+    align-self:flex-end;
+    margin-top: 1vh;
+    text-align: end;
+    display: flex; 
+    gap: 8px; 
+    padding: 8px 16px; 
+    justify-content: end;
+}
+
+.icon {
+    font-size: 16px; 
+    color: #555;
+}
+
+
+.sideButtons:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.warn {
+    color: red;
+}
+
+.warn:hover{
+    color: red;
+}
+
+.sideIcon{
+    font-size: 26px;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+
+}
+.searchBar{
+    border-radius: 50px;
+    border: none;
+    width: 80%;
+    padding: 1vh 3vh 1vh 2vh;
+    margin-top: 3vh;
+    border-end-end-radius: 0px;
+    border-start-end-radius: 0px;
+}
+.searchButton{
+    border: 1px solid black;
+    border-radius: 0px;
+    border: none;
+    width: 18%;
+    padding: 1vh 1vw 1vh 1vw;
+    margin-top: 3vh;
+    border-end-end-radius: 50px;
+    border-start-end-radius: 50px;
+    background-color: blue;
+    color: white;
+}
+.searchIcon{
+    color: white;
+}
+
+.activeButton{
+    color: blue
+}
+
+.nonActiveButton {
+}
+
+.postHighlight{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    padding: 1vh 1vw 2vh 1vw;
+    text-align: start;
+    gap: 1vh
+}
+
+.comment{
+    border-bottom: 1px solid black;
+}
+
+.commentContainer{
+    gap: 20px;
+}
+
+.addButton{
+    width: 100%;
+}
+
+.follow{
+    background-color: #057eff;
+    padding: 0.3vh 1vw 0.3vh 1vw;
+    border-radius: 8px;
+    color: white;
+}
+
+.follow:hover{
+    color: white;
+}
+
+
+.postHighlight {
+    margin-bottom: 16px;
+    padding: 12px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+/* comment section */
+.commentContainer {
+    overflow: hidden; 
+}
+
+.commentContainer .addComment {
+    margin-top: auto; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.commentContainer .addComment textarea {
+    flex-grow: 1;
+    resize: none; /* Disable resizing */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.commentContainer .addComment .addButton {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.commentContainer .addComment .addButton:hover {
+    background-color: #0056b3;
+}
+
+
+.commentContainer .comment {
+    flex-grow: 1;
+    overflow-y: auto; 
+}
